@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    color: #165823;
-    background: #f6f0e8;
+    color: #FFF8F0;
+    background: #8FA58A;
     font-family: Arial, sans-serif;
 }
 
@@ -13,8 +13,8 @@ body{
 
 .hero{
     padding: 36px;
-    color: white;
-    background: #D96868;
+    color: #FFF8F0;
+    background:#40513B;
     border-radius:  24px;
 }
 
@@ -26,7 +26,7 @@ body{
 
 .products {
     padding-left: 1.2rem;
-    background: #D96868;
+    background: #40513B;
     display: flex;
     padding: 36px;
     color: white;
