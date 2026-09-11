@@ -26,12 +26,6 @@ body{
 
 .products {
     padding-left: 1.2rem;
-    background: #40513B;
-    display: flex;
-    padding: 36px;
-    color: white;
-    border-radius: 24px;
-
 }
 
 button {
