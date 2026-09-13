@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +8,41 @@
 </head>
 
 <body>
-    <main class="page">
-        <section class="hero">
+    <a class="skip-link" href="#konten">Lewat ke konten utama</a>
+    <header class="site-header">
+        <nav class="nav" arial-label="Navigasi utama">
+            <a class="brand" href="index.html">Florist</a>
+            <ul>
+               <li><a aria-current="page" href="index.html">Beranda</a></li>
+               <li><a href="tentang.html">Tentang Kami</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main id="konten" class="page">
+        <section class="hero" arial-labelledby="hero-title">
             <p class="eyebrow"> UMKM Batang</p>
-            <h1>Florist</h1>
+            <h1 id="hero-title">Florist</h1>
             <p>Florist store bunga pilihan untuk kado.</p>
             <button id="promoButton" type="button">Lihat promo hari ini</button>
+            <img src="assets\images\ilustrasi.svg" alt="Koleksi Florist Kami">
         </section>
 
         <section aria-labelledby="produk-title">
             <h2 id="produk-title">Produk Unggulan</h2>
-            <ul class="products">
-                <li>Small Bouquet</li>
-            </ul>
-             <ul class="products">
-                <li>Medium Bouquet</li>
-            </ul>
-             <ul class="products">
-                <li>Large Bouquet</li>
-            </ul>
+            <div class="products-list">
+                <article class="products-card">
+                    <h3>Fresh Flowers</h3>
+                    <p>Bunga segar pilihan dengan tampilan cantik dan harum</p>
+                    <p class="price">Rp25.000</p>
+                </article>
+                <article class="products-card">
+                    <h3>Bouquets</h3>
+                    <p>Rangkaian bunga cantik yang cocok untuk hadiah</p>
+                    <p class="price">Rp50.000</p>
+                </article>
+            </div>
+            
         </section>
         <section aria-labelledby="info-title">
             <h2 info-title> Jam Buka & Lokasi</h2>
@@ -35,6 +50,9 @@
             <p>Lokasi : Batang, Jawa Tengah</p>
         </section>
     </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Florist. Data pada halaman ini bersifat dummy</p>
+    </footer>
     <script src="js/script.js"></script>
 
 </body>
