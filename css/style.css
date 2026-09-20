@@ -63,7 +63,7 @@ button {
     margin: 0 auto;
 }
 
-.nav a{
+.nav a {
     color: white;
 }
 
@@ -132,5 +132,33 @@ th,
 td {
     padding: 10px;
     text-align: left;
+    border: 1px solid #dccbbc;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+fieldset {
+    margin: 0 0 16px;
+}
+
+input, textarea, select{
+    background-color: #F2F2F2;
+    border: none;
+    padding: 5px;
+    /* color: ; */
+}
+
+
+#preview-form {
+    padding: 16px;
+    white-space: pre-wrap;
+    background: #40513B;
     border: 1px solid #dccbbc;
 }

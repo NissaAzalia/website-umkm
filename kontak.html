@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist - Website UMKM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#konten">Lewat ke konten utama</a>
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">Florist</a>
+            <ul>
+                <li><a aria-current="page" href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="konten" class="page">
+        <h1>Kontak Florist</h1>
+        <p>Silakan kirim pertanyaan tentang produk, pesanan, atau kerja sama.</p>
+        <form id="form-kontak" action="#" method="post">
+            <div class="field">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama" autocomplete="name" required minlength="3" />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+                <label for="paket">Paket yang diminati</label>
+                <select name="paket" id="paket" required>
+                    <option value="">Pilih paket</option>
+                    <option value="rumahan">Paket rumahan</option>
+                    <option value="kantor">Paket kantor</option>
+                    <option value="reseller">Paket reseller</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Topik pertanyaan</legend>
+                <label><input type="radio" name="topik" value="produk">Informasi produk</label>
+                <label><input type="radio" name="topik" value="pesanan">Status pesanan</label>
+                <label><input type="radio" name="topik" value="kerja-sama">Kerja sama</label>
+            </fieldset>
+            <div class="field">
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" rows="5" required minlength="10"></textarea>
+            </div>
+            <button type="submit">Tampilkan Preview</button>
+        </form>
+        <section aria-labelledby="preview-titlr">
+            <h2 id="preview-title">Preview Data</h2>
+            <pre id="preview-form" aria-live="polite">Data form akan muncul setelah tombol dikirim</pre>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 Florist. Data pada halaman ini bersifat dummy</p>
+    </footer>
+</body>
+
+</html>
