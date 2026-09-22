@@ -36,6 +36,10 @@
                 <input type="email" id="email" name="email" autocomplete="email" required />
             </div>
             <div class="field">
+                <label for="telp">No whatsApp</label>
+                <input type="tel" id="telp" name="telp" autocomplete="telp" required>
+            </div>
+            <div class="field">
                 <label for="paket">Paket yang diminati</label>
                 <select name="paket" id="paket" required>
                     <option value="">Pilih paket</option>
@@ -46,9 +50,15 @@
             </div>
             <fieldset>
                 <legend>Topik pertanyaan</legend>
-                <label><input type="radio" name="topik" value="produk">Informasi produk</label>
+                <label><input type="radio" name="topik" value="produk" required>Informasi produk</label>
                 <label><input type="radio" name="topik" value="pesanan">Status pesanan</label>
                 <label><input type="radio" name="topik" value="kerja-sama">Kerja sama</label>
+            </fieldset>
+            <fieldset>
+                <legend>Waktu kontak</legend>
+                <label><input type="radio" name="waktu" value="pagi" required>Pagi</label>
+                <label><input type="radio" name="waktu" value="siang">Siang</label>
+                <label><input type="radio" name="waktu" value="malam">malam</label>
             </fieldset>
             <div class="field">
                 <label for="pesan">Pesan</label>
