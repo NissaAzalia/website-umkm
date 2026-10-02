@@ -1,7 +1,7 @@
 :root {
-    --color-primary: #D96868;
-    --color-primary-strong: #B95050;
-    --color-text: #40513B;
+    --color-primary: #a94242; 
+    --color-primary-strong: #8e6161;
+    --color-text: #2b541f;
     --color-muted: #777777;
     --color-surface: #FFFFFF;
     --color-surface-soft: #FFF8F0;
@@ -12,8 +12,10 @@
     --space-3: 1rem;
     --space-4: 1.5rem;
     --space-5: 2rem;
+    --space-6: 2.5rem;
     --radius-sm: 0.5rem;
     --radius-md: 0.875rem;
+    --radius-lg: 1.25rem;
     --shadow-card: 0 0.5rem 1.5rem rgb(47 33 24 / 0.1);
 }
 
@@ -118,7 +120,7 @@ button {
   cursor: pointer;
   background: var(--color-primary);
   border: 0;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
 }
 
 .button:hover,
@@ -134,7 +136,7 @@ form {
   padding: var(--space-3);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
 }
 figure { margin-inline: 0; }
