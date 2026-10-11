@@ -6,9 +6,9 @@ form.addEventListener("submit", (event) => {
 
     const data = new FormData(form);
     preview.textContent = [
-        `Nama: ${data.get("nama")}`,
+        `Nama: ${data.get("name")}`,
         `Email: ${data.get("email")}`,
-        `Telp: ${data.get("telp")}`, // ini
+        `Telp: ${data.get("tel")}`, // ini
         `Paket: ${data.get("paket")}`,
         `Topik: ${data.get("topik")}`,
         `Waktu: ${data.get("waktu")}`, //ini

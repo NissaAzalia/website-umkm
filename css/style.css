@@ -80,9 +80,13 @@ a:hover {
 .site-footer {
   margin-top: var(--space-5);
   color: var(--color-muted);
-  text-align: center;
+  align-items: center;
   border-top: 1px solid var(--color-border);
   border-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--space-3);
 }
 
 .page {
@@ -92,6 +96,7 @@ a:hover {
 
 .nav {
   display: flex;
+  flex-direction: row;
   gap: var(--space-3);
   color: var(--color-text);
   font-weight: 800;
@@ -110,7 +115,7 @@ a:hover {
 
 .nav ul {
   display: flex;
-  gap: --space-2;
+  gap: var(--space-2);
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -224,6 +229,13 @@ button:hover {
   margin-block: var(--space-3);
 }
 
+.product-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
 .product-badge {
   align-self: flex-start;
   padding: 0.25rem var(--space-2);
@@ -242,12 +254,7 @@ button:hover {
   margin-top: auto;
 }
 
-.product-grid,
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-3);
-}
+
 
 .gallery-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -257,6 +264,7 @@ button:hover {
 table,
 form {
   margin-block: var(--space-3);
+  margin-inline: auto;
   padding: var(--space-3);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -266,6 +274,12 @@ form {
 
 figure {
   margin-inline: 0;
+}
+
+.team-florist {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
 }
 
 figcaption,
