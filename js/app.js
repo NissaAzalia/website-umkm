@@ -1,7 +1,7 @@
 const produkUmkm = [
   { nama: "Bloom Box", kategori: "Flowers", harga: 85000, stok: 12, unggulan: false },
   { nama: "Flowers Bouquet", kategori: "Flowers", harga: 70000, stok: 2, unggulan: false },
-  { nama: "Bear Bouquet", kategori: "Bear", harga: 50000, stok: 1, unggulan: false },
+  { nama: "Bear Bouquet", kategori: "Bear", harga: 50000, stok: 0, unggulan: false },
   { nama: "Gift Set", kategori: "Bundling", harga: 110000, stok: 2, unggulan: true },
 ];
 
@@ -35,9 +35,9 @@ function statusStok(stok) {
 
   return { label: "Tersedia", className: "" };
 }
-// console.log(statusStok(0));
-// console.log(statusStok(3));
-// console.log(statusStok(12));
+console.log(statusStok(0));
+console.log(statusStok(3));
+console.log(statusStok(12));
 
 function buatKartuProduk(produk) {
   const status = statusStok(produk.stok);
@@ -52,7 +52,7 @@ function buatKartuProduk(produk) {
   `;
 }
 
-// console.log(buatKartuProduk(20));
+console.log(buatKartuProduk(produkUmkm[0]));
 
 function labelKategori(kategori) {
   switch (kategori) {
