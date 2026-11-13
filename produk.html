@@ -26,6 +26,7 @@
     <main id="konten" class="page">
         <h1>Produk Florist</h1>
         <p>Pilih produk sesuai kebutuhan hadiah anda</p>
+
         <section aria-labelledby="kategori-title">
             <h2 id="kategori-title">Kategori Produk</h2>
             <ul>
@@ -79,6 +80,7 @@
                 </article>
             </div>
         </section>
+
         <section class="section" aria-labelledby="produk-dinamis-title">
             <div class="section-header">
                 <p class="eyebrow">Data JavaScript</p>
@@ -87,6 +89,24 @@
                 <p id="produk-unggulan">Produk unggulan akan ditentukan melalui JavaScript.</p>
             </div>
             <div id="produk-dinamis" class="js-product-grid"></div>
+            <section class="product-section" aria-labelledby="produk-title">
+                <div class="section-heading">
+                    <p class="eyebrow">Katalog</p>
+                    <h2 id="produk-title">Produk Unggulan UMKM</h2>
+                    <p id="produk-status" class="produk-status">Produk belum dimuat.</p>
+                </div>
+
+                <div class="filter-bar" aria-label="Filter kategori produk">
+                    <button type="button" class="filter-button is-active" data-filter="Semua">Semua</button>
+                    <button type="button" class="filter-button" data-filter="Flowers">Flowers</button>
+                    <button type="button" class="filter-button" data-filter="Bundling">Bundling</button>
+                    <button type="button" class="filter-button" data-filter="Bear">Bear</button>
+                    <button type="button" class="filter-button" data-filter="Aksesori">Aksesoris</button>
+
+                </div>
+
+                <div id="produk-grid" class="product-grid" aria-live="polite"></div>
+            </section>
         </section>
         <section aria-labelledby="harga-title">
             <h2 id="harga-title">Daftar Harga</h2>
